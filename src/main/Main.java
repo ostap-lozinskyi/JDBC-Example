@@ -23,12 +23,12 @@ public class Main {
 			boolean isRun = true;
 
 			while (isRun) {
-				System.out.println("Головне меню \n" 
-					+ "Щоб додати рядок, введіть: 1 \n"
-					+ "Щоб редагувати рядок, введіть: 2 \n"
-					+ "Щоб видалити рядок, введіть: 3 \n"
-					+ "Щоб вивести на екран таблицю, введіть: 4 \n"
-					+ "Щоб вийти з програми, введіть: 0");
+				System.out.println("Main menu: \n" 
+					+ "To add a row enter: 1 \n"
+					+ "To edit a row enter: 2 \n"
+					+ "To delete a row enter: 3 \n"
+					+ "To display a table enter: 4 \n"
+					+ "To exit the program enter: 0");
 
 				switch (scanner.next()) {
 				case "1":

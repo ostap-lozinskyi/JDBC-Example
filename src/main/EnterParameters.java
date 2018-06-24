@@ -15,7 +15,7 @@ public class EnterParameters {
 		try {
 			i = scanner.nextInt();
 		} catch (Exception e) {
-			System.out.println("Введіть число!");
+			System.out.println("Please enter a number!");
 			scanner.next();
 		}
 		return i;
@@ -24,10 +24,10 @@ public class EnterParameters {
 	public int rowNumberEnter() {
 		int age = 0;
 		try {
-			System.out.println("Введіть номер рядка:");
+			System.out.println("Enter a row number:");
 			age = scanner.nextInt();
 		} catch (Exception e) {
-			System.out.println("Введіть число!");
+			System.out.println("Please enter a number!");
 			scanner.next();
 		}
 		return age;
