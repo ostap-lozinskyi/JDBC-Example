@@ -24,6 +24,9 @@ public class Model {
 		createTestData(connection);
 	}
 
+	/**
+	 * Creates test data to fill the table if it is empty	 
+	 */
 	private void createTestData(Connection connection) throws SQLException {
 		PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL);
 		ResultSet rs = preparedStatement.executeQuery();
@@ -82,6 +85,9 @@ public class Model {
 		statement.close();
 	}
 
+	/**
+	 * Prints all data from the table	 
+	 */
 	public void selectTable(Connection connection) throws SQLException {
 		PreparedStatement statement = connection.prepareStatement(SELECT_ALL);
 		ResultSet rs = statement.executeQuery();
@@ -108,6 +114,9 @@ public class Model {
 		}
 	}
 
+	/**
+	 * Improves view of data in console	 
+	 */
 	private String addSpase(String s, int columnLabelLength) {
 		if (s != null) {
 			int numberOfSpace = columnLabelLength - s.length();

@@ -1,8 +1,9 @@
 package main;
 
-/* Написати консольне меню для управління таблицею в БД, реалізувати всі можливості для додавання, редагування і видалення рядків.
- * Connection має бути в одному екземплярі для всієї програми, відкривається на початку програми, якщо потрібно створює таблицю 
- * і закривається в кінці програми. Таблиця мінімум на 10 стовпців. 
+/** 
+ * This program creates a table in a database and fills it by test data.
+ * It also provides the ability to add, update, remove rows in table and print all data from the table. 
+ * Class PreparedStatement is used. 
  */
 
 import java.sql.Connection;
